@@ -1,0 +1,135 @@
+- generic [ref=f1e3]:
+  - complementary [ref=f1e4]:
+    - generic [ref=f1e6]:
+      - img "ReelForge" [ref=f1e7]
+      - generic [ref=f1e14]:
+        - generic [ref=f1e15]: ReelForge
+        - generic [ref=f1e16]: Fanpage automation
+    - navigation [ref=f1e17]:
+      - link "Tổng quan" [ref=f1e18] [cursor=pointer]:
+        - /url: /
+      - link "Tạo yêu cầu" [ref=f1e26] [cursor=pointer]:
+        - /url: /create
+      - link "Pipeline 5" [ref=f1e31] [cursor=pointer]:
+        - /url: /pipeline
+        - generic [ref=f1e37]: Pipeline
+        - generic [ref=f1e38]: "5"
+      - link "Chờ duyệt 2" [ref=f1e39] [cursor=pointer]:
+        - /url: /review
+        - generic [ref=f1e45]: Chờ duyệt
+        - generic [ref=f1e46]: "2"
+      - link "Lịch đăng" [ref=f1e47] [cursor=pointer]:
+        - /url: /calendar
+      - link "Cài đặt" [ref=f1e52] [cursor=pointer]:
+        - /url: /settings
+    - generic [ref=f1e59]:
+      - generic [ref=f1e60]:
+        - generic [ref=f1e61]: MT
+        - generic [ref=f1e62]:
+          - generic [ref=f1e63]: Minh Trang
+          - generic [ref=f1e64]: Agency · 3 page
+      - generic [ref=f1e65]:
+        - generic [ref=f1e66]: 1 token
+        - button "Đổi giao diện" [ref=f1e71] [cursor=pointer]
+  - generic [ref=f1e78]:
+    - banner [ref=f1e79]:
+      - generic [ref=f1e80]:
+        - generic [ref=f1e81]: BƯỚC 1 · BRIEF
+        - heading "Tạo yêu cầu nội dung" [level=2] [ref=f1e82]
+      - generic [ref=f1e83]:
+        - textbox "Tìm nội dung" [ref=f1e89]:
+          - /placeholder: Tìm nội dung…
+        - button "Thông báo" [ref=f1e90] [cursor=pointer]
+        - button "Yêu cầu mới" [ref=f1e94] [cursor=pointer]
+    - main [ref=f1e96]:
+      - generic [ref=f1e98]:
+        - generic [ref=f1e99]:
+          - generic [ref=f1e100]:
+            - generic [ref=f1e101]:
+              - text: Chủ đề hoặc từ khoá
+              - generic [ref=f1e102]: "*"
+            - textbox [ref=f1e108]: Giá lăn bánh xe điện tháng 9/2026
+            - generic [ref=f1e109]: Một câu mô tả là đủ — hệ thống sẽ tự tìm nguồn.
+          - generic [ref=f1e110]:
+            - generic [ref=f1e111]: Từ khoá gợi ý
+            - generic [ref=f1e112]:
+              - generic [ref=f1e113]:
+                - text: "#xe-điện"
+                - button "Xoá" [ref=f1e114] [cursor=pointer]
+              - generic [ref=f1e118]:
+                - text: "#giá-lăn-bánh"
+                - button "Xoá" [ref=f1e119] [cursor=pointer]
+              - button "+ thêm" [ref=f1e123] [cursor=pointer]
+          - generic [ref=f1e124]:
+            - generic [ref=f1e125]:
+              - generic [ref=f1e126]:
+                - text: Fanpage đích
+                - generic [ref=f1e127]: "*"
+              - combobox [ref=f1e129] [cursor=pointer]:
+                - option "Xe Điện Việt · 128K" [selected]
+                - option "Tin Công Nghệ · 42K"
+                - option "Ăn Gì Hôm Nay · 9.8K"
+            - generic [ref=f1e130]:
+              - generic [ref=f1e131]: Ngôn ngữ nội dung
+              - combobox [ref=f1e133] [cursor=pointer]:
+                - option "Tiếng Việt" [selected]
+                - option "English"
+          - generic [ref=f1e134]:
+            - generic [ref=f1e135]:
+              - text: Định dạng
+              - generic [ref=f1e136]: "*"
+            - generic [ref=f1e137]:
+              - generic [ref=f1e138] [cursor=pointer]:
+                - radio "Reel Video dọc 9:16 kèm giọng đọc" [checked]
+                - generic [ref=f1e141]:
+                  - generic [ref=f1e142]: Reel
+                  - generic [ref=f1e143]: Video dọc 9:16 kèm giọng đọc
+              - generic [ref=f1e144] [cursor=pointer]:
+                - radio "Bài viết Ảnh bìa + caption dài"
+                - generic [ref=f1e146]:
+                  - generic [ref=f1e147]: Bài viết
+                  - generic [ref=f1e148]: Ảnh bìa + caption dài
+          - generic [ref=f1e149]:
+            - generic [ref=f1e150]: Ghi chú cho AI
+            - generic [ref=f1e151]:
+              - textbox "Giọng trung lập, không so sánh trực tiếp thương hiệu…" [ref=f1e152]
+              - generic [ref=f1e153]: 0 / 300
+            - generic [ref=f1e154]: Giọng điệu, điều cần tránh, CTA…
+          - generic [ref=f1e155]:
+            - generic [ref=f1e156] [cursor=pointer]:
+              - switch [ref=f1e157]
+              - generic [ref=f1e159]: Tự động đăng ngay sau khi duyệt
+            - generic [ref=f1e160] [cursor=pointer]:
+              - checkbox "Thông báo Telegram khi có bản nháp" [checked]
+              - generic [ref=f1e164]: Thông báo Telegram khi có bản nháp
+          - generic [ref=f1e166]:
+            - button "Lưu nháp" [ref=f1e167] [cursor=pointer]
+            - button "Bắt đầu pipeline" [ref=f1e168] [cursor=pointer]
+        - generic [ref=f1e171]:
+          - generic [ref=f1e172]:
+            - generic [ref=f1e173]:
+              - heading "Sẽ chạy 6 bước" [level=3] [ref=f1e174]
+              - generic [ref=f1e175]: ~7 PHÚT
+            - list [ref=f1e176]:
+              - listitem [ref=f1e177]:
+                - generic [ref=f1e178]: "1"
+                - generic [ref=f1e180]: Tìm nguồn
+              - listitem [ref=f1e182]:
+                - generic [ref=f1e183]: "2"
+                - generic [ref=f1e185]: Viết lại
+              - listitem [ref=f1e187]:
+                - generic [ref=f1e193]:
+                  - generic [ref=f1e194]: Duyệt
+                  - generic [ref=f1e195]: bạn duyệt ở bước này
+              - listitem [ref=f1e196]:
+                - generic [ref=f1e197]: "4"
+                - generic [ref=f1e199]: Tạo ảnh/video
+              - listitem [ref=f1e201]:
+                - generic [ref=f1e202]: "5"
+                - generic [ref=f1e204]: Ghép + giọng đọc
+              - listitem [ref=f1e206]:
+                - generic [ref=f1e207]: "6"
+                - generic [ref=f1e209]: Đăng
+          - generic [ref=f1e212]:
+            - generic [ref=f1e213]: Lưu ý
+            - paragraph [ref=f1e214]: Nội dung luôn dừng ở bước Duyệt. Không có gì được đăng lên fanpage mà bạn chưa xem.

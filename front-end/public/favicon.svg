@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="ReelForge">
+  <rect width="512" height="512" rx="116" fill="#120A1F"/>
+  <g transform="translate(30 26)"><path d="M312 88 L156 288 H244 L200 424 L364 216 H272 Z" fill="#22D3EE" opacity="0.78" stroke="#22D3EE" stroke-width="28" stroke-linejoin="round"/></g>
+  <g transform="translate(-30 -26)"><path d="M312 88 L156 288 H244 L200 424 L364 216 H272 Z" fill="#F0348C" opacity="0.82" stroke="#F0348C" stroke-width="28" stroke-linejoin="round"/></g>
+  <path d="M312 88 L156 288 H244 L200 424 L364 216 H272 Z" fill="#FFF6EE" stroke="#FFF6EE" stroke-width="28" stroke-linejoin="round"/>
+</svg>

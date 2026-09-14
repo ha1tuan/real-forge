@@ -1,0 +1,104 @@
+/* ReelForge "Spark" light theme — OPT-IN. Dark is the brand's home.
+   Scope: <html data-theme="light"> for the whole app, or any container for one subtree
+   (nesting works — a light panel inside a dark screen needs no extra CSS).
+   Only SEMANTIC ALIASES are reassigned here; the brand ramps in colors never change.
+   Accents step darker on paper (magenta 600, cyan 700) so 4.5:1 holds against Spark type.
+   The human/machine law is identical in both themes. */
+[data-theme="light"]{
+  /* ---- Spark paper ramp ---- */
+  --paper-000:#FFFFFF;
+  --paper-100:#FFF6EE;
+  --paper-200:#FBEFE6;
+  --paper-300:#F6E9DE;
+  --paper-400:#EADCD0;
+  --paper-500:#D8C7B9;
+
+  /* ---- Ink ramp (type on paper) ---- */
+  --ink-900:#120A1F;
+  --ink-700:#4A3560;
+  --ink-500:#6E5C82;
+  --ink-400:#9683A8;
+
+  /* ---- Light status hues, darkened to clear 4.5:1 on Spark ---- */
+  --mint-ink:#0A7A54;
+  --amber-ink:#96540A;
+  --rose-ink:#C51D40;
+
+  /* ---- Alpha utilities invert: ink tint on light ground ---- */
+  --alpha-spark-04:rgba(18,10,31,.04);
+  --alpha-spark-08:rgba(18,10,31,.07);
+  --alpha-spark-14:rgba(18,10,31,.12);
+  --alpha-spark-24:rgba(18,10,31,.20);
+  --alpha-void-60:rgba(18,10,31,.34);
+  --alpha-magenta-16:rgba(193,31,112,.12);
+  --alpha-cyan-16:rgba(11,110,128,.12);
+
+  /* ---- Surfaces: cards rise to WHITE above the Spark ground; inputs recess ---- */
+  --bg-app:var(--paper-100);
+  --bg-sunken:var(--paper-300);
+  --surface-card:var(--paper-000);
+  --surface-raised:var(--paper-000);
+  --surface-inset:var(--paper-300);
+  --surface-hover:var(--paper-200);
+  --surface-translucent:var(--alpha-spark-04);
+
+  /* ---- Type ---- */
+  --text-primary:var(--ink-900);
+  --text-secondary:var(--ink-700);
+  --text-muted:var(--ink-500);
+  --text-disabled:var(--ink-400);
+  --text-on-magenta:var(--spark-100);
+  --text-on-cyan:var(--spark-100);
+  --text-on-gradient:var(--spark-100);
+  --text-link:var(--magenta-600);
+  --text-link-hover:var(--magenta-700);
+
+  /* ---- Borders stay 2px; colour becomes ink-alpha ---- */
+  --border-subtle:rgba(18,10,31,.10);
+  --border-default:rgba(18,10,31,.16);
+  --border-strong:var(--paper-500);
+  --border-focus:var(--cyan-700);
+
+  /* ---- Accents step darker on paper ---- */
+  --action-human:var(--magenta-600);
+  --action-human-hover:var(--magenta-500);
+  --action-human-press:var(--magenta-700);
+  --action-machine:var(--cyan-700);
+  --action-machine-hover:var(--cyan-600);
+  --action-machine-press:#08525F;
+  --state-machine:var(--cyan-700);
+  --state-machine-soft:var(--alpha-cyan-16);
+  --human-ink:var(--magenta-600);
+  --machine-ink:var(--cyan-700);
+
+  --status-success:var(--mint-ink);
+  --status-warning:var(--amber-ink);
+  --status-danger:var(--rose-ink);
+  --status-idle:var(--ink-400);
+
+  --tint-success:rgba(10,122,84,.12);
+  --tint-warning:rgba(150,84,10,.12);
+  --tint-danger:rgba(197,29,64,.12);
+
+  /* ---- Control parts ---- */
+  --knob-on:var(--spark-100);
+  --knob-off:var(--paper-500);
+  --tooltip-bg:var(--ink-900);
+  --tooltip-fg:var(--paper-100);
+  --option-bg:var(--paper-000);
+  --scrim:var(--alpha-void-60);
+
+  /* ---- Elevation: shallower, cooler, far weaker than on void ---- */
+  --shadow-sm:0 1px 2px rgba(18,10,31,.06);
+  --shadow-card:0 6px 18px -10px rgba(18,10,31,.18);
+  --shadow-raised:0 16px 40px -18px rgba(18,10,31,.24);
+  --shadow-sheet:0 30px 70px -26px rgba(18,10,31,.30);
+  --glow-human:0 0 0 1px rgba(193,31,112,.35),0 6px 20px -8px rgba(193,31,112,.35);
+  --glow-machine:0 0 0 1px rgba(11,110,128,.35),0 6px 20px -8px rgba(11,110,128,.30);
+  --ring-focus:0 0 0 2px var(--paper-100),0 0 0 4px var(--cyan-700);
+  --inset-hairline:inset 0 1px 0 rgba(255,255,255,.75);
+
+  /* ---- Still exactly one gradient; it starts at cyan-600 so type survives on it ---- */
+  --gradient-forge:linear-gradient(120deg,var(--cyan-600) 0%,var(--violet-arc) 52%,var(--magenta-600) 100%);
+  --gradient-forge-soft:linear-gradient(120deg,rgba(11,110,128,.14) 0%,rgba(139,92,246,.12) 52%,rgba(193,31,112,.14) 100%);
+}

@@ -1,0 +1,113 @@
+/* Tailwind v4 không kèm preflight — design dùng reset riêng trong _base.scss,
+   preflight sẽ làm lệch pixel so với bản design. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* Đăng ký design token (src/styles/tokens) thành utility Tailwind.
+   `inline reference`: utility trỏ thẳng var(--token), không phát sinh biến mới,
+   nên theme sáng/tối (đổi token qua [data-theme]) vẫn tự áp dụng.
+   Khoảng cách dùng thang mặc định của Tailwind: --space-N (px) = N/4 rem, vd --space-5 16px → p-4. */
+@theme inline reference {
+  /* màu — tên class = tên token: bg-surface-card, text-text-muted, border-border-subtle… */
+  --color-bg-app: var(--bg-app);
+  --color-bg-sunken: var(--bg-sunken);
+  --color-surface-card: var(--surface-card);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-inset: var(--surface-inset);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-translucent: var(--surface-translucent);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-disabled: var(--text-disabled);
+  --color-text-on-magenta: var(--text-on-magenta);
+  --color-text-on-cyan: var(--text-on-cyan);
+  --color-text-on-gradient: var(--text-on-gradient);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-default: var(--border-default);
+  --color-border-strong: var(--border-strong);
+  --color-border-focus: var(--border-focus);
+  --color-action-human: var(--action-human);
+  --color-action-human-hover: var(--action-human-hover);
+  --color-action-human-press: var(--action-human-press);
+  --color-action-machine: var(--action-machine);
+  --color-action-machine-hover: var(--action-machine-hover);
+  --color-action-machine-press: var(--action-machine-press);
+  --color-state-machine: var(--state-machine);
+  --color-status-success: var(--status-success);
+  --color-status-warning: var(--status-warning);
+  --color-status-danger: var(--status-danger);
+  --color-status-idle: var(--status-idle);
+  --color-human-ink: var(--human-ink);
+  --color-machine-ink: var(--machine-ink);
+  --color-tint-success: var(--tint-success);
+  --color-tint-warning: var(--tint-warning);
+  --color-tint-danger: var(--tint-danger);
+  --color-alpha-spark-04: var(--alpha-spark-04);
+  --color-alpha-spark-08: var(--alpha-spark-08);
+  --color-alpha-spark-14: var(--alpha-spark-14);
+  --color-alpha-spark-24: var(--alpha-spark-24);
+  --color-alpha-magenta-16: var(--alpha-magenta-16);
+  --color-alpha-cyan-16: var(--alpha-cyan-16);
+  --color-option-bg: var(--option-bg);
+  --color-scrim: var(--scrim);
+
+  /* typography */
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+  --text-hero: var(--text-hero);
+  --text-display: var(--text-display);
+  --text-h1: var(--text-h1);
+  --text-h2: var(--text-h2);
+  --text-h3: var(--text-h3);
+  --text-h4: var(--text-h4);
+  --text-body-lg: var(--text-body-lg);
+  --text-body: var(--text-body);
+  --text-body-sm: var(--text-body-sm);
+  --text-label: var(--text-label);
+  --text-micro: var(--text-micro);
+  --leading-tight: var(--leading-tight);
+  --leading-snug: var(--leading-snug);
+  --leading-normal: var(--leading-normal);
+  --leading-relaxed: var(--leading-relaxed);
+  --tracking-display: var(--tracking-display);
+  --tracking-tight: var(--tracking-tight);
+  --tracking-normal: var(--tracking-normal);
+  --tracking-label: var(--tracking-label);
+  --tracking-mono: var(--tracking-mono);
+
+  /* radius */
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-pill: var(--radius-pill);
+  --radius-control: var(--radius-control);
+  --radius-card: var(--radius-card);
+  --radius-sheet: var(--radius-sheet);
+
+  /* elevation */
+  --shadow-sm: var(--shadow-sm);
+  --shadow-card: var(--shadow-card);
+  --shadow-raised: var(--shadow-raised);
+  --shadow-sheet: var(--shadow-sheet);
+  --shadow-glow-human: var(--glow-human);
+  --shadow-glow-machine: var(--glow-machine);
+
+  /* motion — thời lượng dùng duration-(--dur-fast) */
+  --ease-standard: var(--ease-standard);
+  --ease-out: var(--ease-out);
+  --ease-in: var(--ease-in);
+}
+
+/* "The one gradient" */
+@utility bg-gradient-forge {
+  background: var(--gradient-forge);
+}
+@utility bg-gradient-forge-soft {
+  background: var(--gradient-forge-soft);
+}

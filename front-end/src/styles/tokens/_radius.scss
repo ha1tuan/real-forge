@@ -1,0 +1,15 @@
+:root{
+  /* Squircle language: radius is 22–28% of the block's shorter side. */
+  --radius-xs:6px;
+  --radius-sm:10px;
+  --radius-md:14px;
+  --radius-lg:20px;
+  --radius-xl:28px;
+  --radius-2xl:36px;
+  --radius-pill:999px;
+  --radius-ratio:0.25;      /* multiply by block size for custom squircles */
+  --radius-control:var(--radius-md);
+  --radius-card:var(--radius-xl);
+  --radius-sheet:var(--radius-2xl);
+  --radius-glyph:26%;
+}

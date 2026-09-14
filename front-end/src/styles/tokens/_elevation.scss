@@ -1,0 +1,12 @@
+:root{
+  --shadow-none:none;
+  --shadow-sm:0 1px 2px rgba(11,6,20,.5);
+  --shadow-card:0 12px 32px -12px rgba(11,6,20,.85);
+  --shadow-raised:0 24px 60px -20px rgba(11,6,20,.9);
+  --shadow-sheet:0 40px 100px -30px rgba(11,6,20,.95);
+  --glow-human:0 0 0 1px rgba(240,52,140,.5),0 8px 28px -8px rgba(240,52,140,.45);
+  --glow-machine:0 0 0 1px rgba(34,211,238,.5),0 8px 28px -8px rgba(34,211,238,.4);
+  --ring-focus:0 0 0 2px var(--void-900),0 0 0 4px var(--cyan-500);
+  --inset-hairline:inset 0 1px 0 rgba(255,246,238,.06);
+  --blur-veil:blur(18px);
+}

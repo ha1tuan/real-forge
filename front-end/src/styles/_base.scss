@@ -1,0 +1,21 @@
+// Nằm trong @layer base để utility của Tailwind (layer utilities) vẫn override được.
+@layer base {
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;background:var(--bg-app);color:var(--text-primary);font:var(--type-body);letter-spacing:var(--tracking-tight);-webkit-font-smoothing:antialiased;text-wrap:pretty}
+  [data-theme="light"]{background:var(--bg-app);color:var(--text-primary);color-scheme:light}
+  [data-theme="light"] ::selection{background:var(--alpha-magenta-16);color:var(--ink-900)}
+  h1,h2,h3,h4{margin:0;font-family:var(--font-display);font-weight:var(--weight-bold);letter-spacing:var(--tracking-display)}
+  a{color:var(--text-link);text-decoration:none}
+  a:hover{color:var(--text-link-hover);text-decoration:underline;text-underline-offset:3px}
+  ::selection{background:var(--alpha-magenta-16);color:var(--spark-100)}
+  :focus-visible{outline:none;box-shadow:var(--ring-focus)}
+  .rf-label{font:var(--type-label);letter-spacing:var(--tracking-label);text-transform:uppercase;color:var(--text-muted)}
+  .rf-num{font-family:var(--font-mono);font-variant-numeric:tabular-nums;letter-spacing:var(--tracking-mono)}
+
+  // Khung app (từ ui_kits/reelforge-app/index.html)
+  html,body{margin:0;height:100%;background:var(--bg-app);transition:background var(--dur-base) var(--ease-standard)}
+  #root{height:100vh}
+}
+
+@keyframes rf-spin{to{transform:rotate(360deg)}}
+@keyframes rf-pulse{0%,100%{opacity:.55}50%{opacity:1}}

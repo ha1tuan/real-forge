@@ -1,0 +1,42 @@
+:root{
+  --font-display:"Space Grotesk","Segoe UI",system-ui,sans-serif;
+  --font-body:"Space Grotesk","Segoe UI",system-ui,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;
+
+  --weight-regular:400;
+  --weight-medium:500;
+  --weight-semibold:600;
+  --weight-bold:700;
+
+  --text-hero:64px;
+  --text-display:48px;
+  --text-h1:36px;
+  --text-h2:28px;
+  --text-h3:22px;
+  --text-h4:18px;
+  --text-body-lg:17px;
+  --text-body:15px;
+  --text-body-sm:13px;
+  --text-label:12px;
+  --text-micro:11px;
+
+  --leading-tight:1.02;
+  --leading-snug:1.16;
+  --leading-normal:1.5;
+  --leading-relaxed:1.65;
+
+  --tracking-display:-0.025em;
+  --tracking-tight:-0.015em;
+  --tracking-normal:0em;
+  --tracking-label:0.12em;
+  --tracking-mono:0.04em;
+
+  /* composite roles */
+  --type-hero:var(--weight-bold) var(--text-hero)/var(--leading-tight) var(--font-display);
+  --type-display:var(--weight-bold) var(--text-display)/var(--leading-tight) var(--font-display);
+  --type-h1:var(--weight-bold) var(--text-h1)/var(--leading-snug) var(--font-display);
+  --type-h2:var(--weight-bold) var(--text-h2)/var(--leading-snug) var(--font-display);
+  --type-h3:var(--weight-semibold) var(--text-h3)/var(--leading-snug) var(--font-display);
+  --type-body:var(--weight-regular) var(--text-body)/var(--leading-normal) var(--font-body);
+  --type-label:var(--weight-semibold) var(--text-label)/1.2 var(--font-mono);
+}
